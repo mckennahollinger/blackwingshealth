@@ -1,15 +1,25 @@
+import { StatusBar } from 'expo-status-bar';
 import React,{Component} from 'react';
-import {Container, Content, Text} from 'native-base'
-import {ImageBackground} from 'react-native';
+import {ImageBackground, StyleSheet, View} from 'react-native';
 
-export default class App extends Component{
-    render()  {
-        return  (
+export default class App extends React.Component{
+    render() {
+        return (
+            <View>
             <ImageBackground
-                style={{flex: 1}}
-                source={require('./Splash_Screen.png')}
+                style={styles.container}
+                source={require('./assets/Splash Screen.png')}
               >
             </ImageBackground>
+            </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+  backgroundContainer: {
+    flex: 1,
+    width: '100%',
+    height: '100%'
+  }
+});

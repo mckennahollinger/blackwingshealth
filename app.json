@@ -1,0 +1,12 @@
+{
+  "name": "blackwingshealth",
+  "displayName": "blackwingshealth",
+  "expo": {
+    "name": "blackwingshealth",
+    "slug": "blackwingshealth",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
